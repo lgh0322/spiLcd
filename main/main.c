@@ -63,16 +63,8 @@ void app_main(void)
      Lcd_Init();//显示屏初始化
 
 char fuck[]="wsmslgh";
-     char lcd_buff[100]={0};
-
-    Gui_DrawFont_GBK16(16,0,VIOLET,WHITE,(u8 *)"李光浩");
-    Gui_DrawFont_GBK16(32,20,BLUE,WHITE,(u8 *)"兰州");
-
-
-
-  
-           sprintf(lcd_buff, "AP:%s      ",fuck);
-           LCD_P6x8Str(0,60,BLUE,WHITE,(u8 *)lcd_buff);        
+ 
+           LCD_P6x8Str(0,60,BLUE,WHITE,(u8 *)fuck);        
 
     gpio_config_t io_conf;
     //disable interrupt
